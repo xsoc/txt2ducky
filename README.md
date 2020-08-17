@@ -53,7 +53,7 @@ done < $filein
 ```
 
 ## Couldn't You Just Do That With RegEx?
-You sure can! Use find and replace in your favourite editor with these settings...
+You sure can! Use find and replace in your favourite regex capable text editor with these settings...
 
 > Find: `.*`
 >
