@@ -51,3 +51,10 @@ while read -r line; do
     echo ENTER        >> $fileout
 done < $filein
 ```
+
+## Couldn't You Just Do That With RegEx?
+You sure can! Use find and replace in your favourite editor with these settings...
+
+> Find: `.*`
+>
+> Replace: `STRING $0\nENTER`
