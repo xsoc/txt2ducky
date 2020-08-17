@@ -10,7 +10,8 @@ Windows: [txt2ducky.cmd](https://raw.githubusercontent.com/xsoc/txt2ducky/master
 \*nix: [txt2ducky.sh](https://github.com/xsoc/txt2ducky/blob/master/txt2ducky.sh)
 
 ## Usage
-> `txt2ducky InputFile OutputFile`
+> `txt2ducky InputFile [OutputFile]`
+If `OutputFile` isn't defined, it will default to `InputFile.txt`
 
 If you want to use the code in another (batch file) project, all you really need is
 ```batch
