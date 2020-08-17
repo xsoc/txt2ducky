@@ -41,7 +41,6 @@ function help {
 [ $1 = -h ]     && help 0
 
 filein=$1
-fileout=$2
 if [ ! -z $2 ]; then
     fileout=$2
 else
