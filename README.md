@@ -11,23 +11,8 @@ Windows: [txt2ducky.cmd](https://raw.githubusercontent.com/xsoc/txt2ducky/master
 
 ## Usage
 > `txt2ducky InputFile [OutputFile]`
+
 If `OutputFile` isn't defined, it will default to `InputFile.txt`
-
-If you want to use the code in another (batch file) project, all you really need is
-```batch
-FOR /F "usebackq delims=" %%I IN ("%FILEIN%") DO (
-    @echo STRING %%I >> "%FILEOUT%"
-    @echo ENTER      >> "%FILEOUT%"
-)
-```
-
-or in a bash script, go for...
-```bash
-while read -r line; do
-    echo STRING $line >> $fileout
-    echo ENTER        >> $fileout
-done < $filein
-```
 
 ## Sample
 If you wanted to deliver your awesome batch file as a payload via ducky script, like the one below...
@@ -48,3 +33,21 @@ ENTER
 ```
 
 Super basic yet hopefully handy.
+
+## Core Code for Reuse
+
+If you want to use the code in another (batch file) project, all you really need is
+```batch
+FOR /F "usebackq delims=" %%I IN ("%FILEIN%") DO (
+    @echo STRING %%I >> "%FILEOUT%"
+    @echo ENTER      >> "%FILEOUT%"
+)
+```
+
+or in a bash script, go for...
+```bash
+while read -r line; do
+    echo STRING $line >> $fileout
+    echo ENTER        >> $fileout
+done < $filein
+```
