@@ -1,8 +1,10 @@
 # txt2ducky
-Convert a text file to ducky script.
+Convert a text file to [ducky script](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript).
 
 This allows you to easily convert your existing bash scripts / batch files etc to ducky input commands.
 Runs on Windows, and wherever bash scripts are found (tested on Xubuntu 20.04).
+
+My [Rubber Ducky](https://shop.hak5.org/products/usb-rubber-ducky-deluxe) is still shipping, so I haven't been able to test it there, however it does work great with [Rucky](https://github.com/mayankmetha/Rucky) on a rooted Android phone.
 
 ## Downloads
 Windows: [txt2ducky.cmd](https://raw.githubusercontent.com/xsoc/txt2ducky/master/txt2ducky.cmd)
