@@ -51,4 +51,5 @@ while read -r line; do
     echo ENTER        >> $fileout
 done < $filein
 
+echo Complete.
 exit 0
