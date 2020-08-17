@@ -7,7 +7,9 @@ Runs on Windows, and wherever bash scripts are found (tested on Xubuntu 20.04).
 ## Downloads
 Windows: [txt2ducky.cmd](https://raw.githubusercontent.com/xsoc/txt2ducky/master/txt2ducky.cmd)
 
-\*nix: [txt2ducky.sh](https://github.com/xsoc/txt2ducky/blob/master/txt2ducky.sh)
+Linux/etc: [txt2ducky.sh](https://github.com/xsoc/txt2ducky/blob/master/txt2ducky.sh)
+
+Bash users, don't forget to `chmod +x ./txt2ducky.sh`, and you can even `mv ./txt2ducky.sh ./txt2ducky` if you prefer to drop the extension.
 
 ## Usage
 > `txt2ducky InputFile [OutputFile]`
