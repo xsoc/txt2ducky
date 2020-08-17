@@ -29,12 +29,15 @@ rem For more information, please refer to unlicense.org
 
 IF "%1" EQU "/?" GOTO help
 IF "%1" EQU ""   GOTO help
-IF "%2" EQU ""   GOTO help
 
 SETLOCAL
 
 SET FILEIN=%1
-SET FILEOUT=%2
+IF "%2" EQU "" (
+    SET FILEOUT=%1.txt
+) ELSE (
+    SET FILEOUT=%2
+)
 
 IF EXIST "%FILEIN%" (
     IF EXIST "%FILEOUT%" del "%FILEOUT%"
@@ -57,4 +60,6 @@ GOTO :EOF
 @echo Converts a text file to Ducky Script
 @echo.
 @echo Usage:
-@echo     txt2ducky InputFile OutputFile
+@echo     Txt2Ducky InputFile [OutputFile]
+@echo.
+@echo     If [OutputFile] not specified it will default to InputFile.txt
