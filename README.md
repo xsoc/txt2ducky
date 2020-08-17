@@ -9,8 +9,7 @@ Windows: [txt2ducky.cmd](https://raw.githubusercontent.com/xsoc/txt2ducky/master
 
 \*Nix: [txt2ducky.sh](https://github.com/xsoc/txt2ducky/blob/master/txt2ducky.sh)
 
-> **Usage:**
->
+## Usage
 > `txt2ducky InputFile OutputFile`
 
 If you want to use the code in another (batch file) project, all you really need is
@@ -28,3 +27,23 @@ while read -r line; do
     echo ENTER        >> $fileout
 done < $filein
 ```
+
+## Sample
+If you wanted to deliver your awesome batch file as a payload via ducky script, like the one below...
+```batch
+@echo off
+@echo Super cool awesome batch file
+ipconfig
+```
+
+Then `txt2ducky` would spit out the following
+```ducky
+STRING @echo off
+ENTER
+STRING @echo Super cool awesome batch file
+ENTER
+STRING ipconfig
+ENTER
+```
+
+Super basic yet hopefully handy.
