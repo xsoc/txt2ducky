@@ -30,17 +30,23 @@ function help {
     echo Converts a text file to Ducky Script
     echo
     echo Usage:
-    echo \ \ \ \ txt2ducky InputFile OutputFile
+    echo \ \ \ \ txt2ducky InputFile [OutputFile]
+    echo
+    echo \ \ \ \ If [OutputFile] not specified it will default to InputFile.txt
     exit $1
 }
 
 [ -z $1 ]       && help 1
-[ -z $2 ]       && help 1
 [ $1 = --help ] && help 0
 [ $1 = -h ]     && help 0
 
 filein=$1
 fileout=$2
+if [ ! -z $2 ]; then
+    fileout=$2
+else
+    fileout=$1.txt
+fi
 
 [ ! -e $filein ] && echo File not found: $filein && exit 1
 [ -e $fileout ] && rm $fileout
@@ -52,4 +58,5 @@ while read -r line; do
 done < $filein
 
 echo Complete.
+
 exit 0
