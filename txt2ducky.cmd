@@ -57,4 +57,4 @@ GOTO :EOF
 @echo Converts a text file to Ducky Script
 @echo.
 @echo Usage:
-@echo     Txt2Ducky InputFile OutputFile
+@echo     txt2ducky InputFile OutputFile
