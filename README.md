@@ -60,3 +60,5 @@ You sure can! Use find and replace in your favourite regex capable text editor w
 > Find: `.*`
 >
 > Replace: `STRING $0\nENTER`
+
+Tested sucessfully in Notepad++ :)
