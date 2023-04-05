@@ -7,9 +7,7 @@
                           ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═════╝  ╚═════╝  ╚═════╝╚═╝  ╚═╝   ╚═╝   
                                           Quickly convert text for ducky scripts
 ```
-Convert a text file to [ducky script](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript).
-
-This allows you to easily prepare text files (e.g. your existing bash scripts / batch files etc) to ducky input commands for easier deployment.
+This allows you to easily prepare text files (e.g. your existing bash scripts / batch files etc) to [ducky](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript) input commands for easier deployment.
 Runs on Windows, and wherever bash scripts are found (tested on Xubuntu 20.04).
 
 Tested successfully on a real [Rubber Ducky](https://shop.hak5.org/products/usb-rubber-ducky-deluxe) and with the [Rucky](https://github.com/mayankmetha/Rucky) app on a rooted Android phone.
