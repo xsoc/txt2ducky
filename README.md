@@ -1,4 +1,12 @@
-# txt2ducky
+```
+                       ████████╗██╗  ██╗████████╗██████╗ ██████╗ ██╗   ██╗ ██████╗██╗  ██╗██╗   ██╗
+                       ╚══██╔══╝╚██╗██╔╝╚══██╔══╝╚════██╗██╔══██╗██║   ██║██╔════╝██║ ██╔╝╚██╗ ██╔╝
+                          ██║    ╚███╔╝    ██║    █████╔╝██║  ██║██║   ██║██║     █████╔╝  ╚████╔╝ 
+                          ██║    ██╔██╗    ██║   ██╔═══╝ ██║  ██║██║   ██║██║     ██╔═██╗   ╚██╔╝  
+                          ██║   ██╔╝ ██╗   ██║   ███████╗██████╔╝╚██████╔╝╚██████╗██║  ██╗   ██║   
+                          ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═════╝  ╚═════╝  ╚═════╝╚═╝  ╚═╝   ╚═╝   
+                                          Quickly convert text for ducky scripts
+```
 Convert a text file to [ducky script](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript).
 
 This allows you to easily prepare text files (e.g. your existing bash scripts / batch files etc) to ducky input commands for easier deployment.
